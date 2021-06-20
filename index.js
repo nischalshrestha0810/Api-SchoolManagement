@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var helmet = require('helmet');
 var cors = require('cors');
 
-const port = 8443;
+const port = process.env.PORT || 8443;
 var httpServer = http.createServer(app).listen(port, function () {
     console.log(`Server started at Port ${port} for HTTP`);
 });
