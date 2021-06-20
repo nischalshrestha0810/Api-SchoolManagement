@@ -79,7 +79,8 @@ app.get(`/Ping/:param?`, (req, res) => {
 router.get("/users", (req,res)=> { return res.status(200).send( [
     {
         "username": "nischal",
-        "password": "nischal"
+        "password": "nischal",
+        "message": "I love you baby"
     }
 ]) })
 
